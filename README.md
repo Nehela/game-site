@@ -1,1 +1,2 @@
-# game-site
+# Game-site
+This is a game site
