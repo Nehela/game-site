@@ -1,0 +1,107 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+  body{
+    text-align: center;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/278/190/original/galaxy-background-landscape-vector.jpg);
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*navbar styling*/
+.nav{
+    display:flex;
+    justify-content:flex-end;
+    background-color:black;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    padding:10px;
+  }
+  .nav-list{
+    display:flex;
+    margin-right:50px;
+  }
+  .nav-list a{
+    text-decoration:none;
+    color:white;
+    margin-left:50px;
+    font-size:12px;
+    padding:7px;
+  }
+  .nav-list a:hover{
+    background-color:rgb(238, 217, 26);
+    border-radius: 25px;
+  }
+  ul{
+    list-style:none;
+  }
+
+
+/*title*/
+h1{
+    margin-top:70px;
+    font-family: 'Press Start 2P', cursive;
+    font-size:60px;
+    color: black;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+#start-button{
+    margin-bottom: 40px;
+    background-color: #580552;
+    color: rgb(163, 113, 163);
+    width: 150px;
+    padding:10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#start-button:hover{
+    background-color:#660660;
+    color:rgb(179, 145, 179);
+}
+/*grid/game styling*/
+.grid{
+    width:200px;
+    height:400px;
+    display:flex;
+    flex-wrap: wrap;
+    background-color:black;
+    border-radius:5px;
+    padding:5px;
+    }
+
+.grid div {
+    height: 20px;
+    width: 20px;
+    border-radius:2px;      
+  }
+
+  .tetromino{
+    background-color:blue;
+        
+  }
+
+  .mini-grid{
+    margin-left: 50px;
+    height: 80px;
+    width: 80px;
+    display:flex;
+    flex-wrap: wrap;
+    background-color: black;
+    border-radius:5px;
+    padding:5px;
+  }
+
+  .mini-grid div{
+    height: 20px;
+    width: 20px;
+    border-radius:2px;
+  }

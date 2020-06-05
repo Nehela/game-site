@@ -1,0 +1,238 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Roboto', sans-serif;
+  --main-gray:#1c1b1a;
+  text-decoration: none;
+}
+body{
+  background-color: #f0eff3;
+}
+
+
+/* navbar styling */
+
+.nav-img{
+  width:300px;
+}
+
+.img-container{
+  position: relative;
+  color:white;
+  font-size: 35px;
+}
+
+.img-container h3{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.navbar{
+  position: fixed;
+  }
+
+.navbar-elm{
+  list-style: none;
+  width: 300px;
+  background-color: #3c3151;
+  height:100vh;
+  overflow:auto;
+  display:block;
+  
+  }
+ 
+.nav-link{
+  display: block;
+  color:#3c3151;
+  margin-top: 60px;
+  margin-right:60px;
+  margin-left:60px;
+  border-radius:25px;
+  padding: 10px;
+  background-color: #f0c846;
+  text-decoration:none;
+  list-style:none;
+  text-align: center;
+  font-size:;
+  transition: background-color .3s ease-in-out;  
+  }
+
+.nav-link:hover{
+  background-color: #997a16;;
+  }
+
+.navbar-header{
+  text-align: center;
+  }
+
+/* search bar style */
+ 
+.head {
+  display:flex;
+  justify-content: space-between;
+  }
+.search-box {
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+  margin-right: 15px;
+  margin-top: 15px;
+  }
+    
+.search-btn {
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  color: white;
+  cursor: pointer;
+  }
+        
+.search-btn > i {
+  font-size: 30px;
+    }
+    
+.search-txt {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+  font-weight: bold;
+ }
+    
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+ }
+ 
+/* game cards */
+ 
+.projects{
+  margin-left:320px;
+ }
+
+.head>h2{
+  color:#2f3640;
+  padding: 20px 0px 0px 10px;
+  font-size: 39px;
+  }
+  
+.project-grid{
+  margin-top:50px;
+  display:grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap:0px 0px 20px;
+  justify-items:center;
+  }
+
+.project-image{ 
+  top:0;
+  border-radius:50px 50px 0px 0px;
+  width:300px;
+  height:200px;
+  }
+
+.text{
+  border-radius:50px;
+  color:#f0eff3;
+  height:150px;
+}
+.game-txt{
+  display:flex;
+  justify-content:center;
+  padding-top:25px;
+  font-size:40px;
+  }
+  
+.game-type-txt{
+  display:flex;
+  justify-content:center;
+  padding-top:10px;
+  font-size:20px;
+  }  
+
+/* tetris style */
+.project-block-tetris{
+  background-color:#d9074d;
+  border-radius:50px;
+  }
+
+  .project-block-tetris:hover{
+    box-shadow: 0px 5px 15px 2px #e95687;
+  }
+
+  /* Memory Card Style */
+  .project-block-memory{
+    background-color:#e8940e;
+    border-radius:50px;
+  }
+
+  .project-block-memory:hover{
+    box-shadow: 0px 5px 15px 2px  #f5b855;
+  }
+
+  /* Snake Style */
+.project-block-snake{
+  background-color:#86c232;
+  border-radius:50px;
+  }
+
+  .project-block-snake:hover{
+    box-shadow: 0px 5px 15px 2px  #a4c75e;
+  }
+
+  /* button code */
+
+.btn{
+  display:block;
+  margin: auto;
+  margin-top:70px;
+  background:linear-gradient(90deg,#fbe184 0%,#b89368 49%, #50214d 80%, #3c3151 100%);
+  border-radius:40px;
+  color:#2f3640;
+  padding: 15px 6px;
+  font-size:1.5rem;
+  border:none;   
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #3c3151;
+  transform: translateY(-0.25em);
+  animation:slidebg 2s linear infinite;
+}
+  
+@keyframes slidebg {
+  to {
+   background-position:20vw;
+  }
+} 
+
+.btn:after {
+  content: attr(alt);
+  padding:10px;
+  border-radius: 40px;
+  background-color:#f0eff3;
+ 
+  }
+
+
+  /* background:linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%); */
+
+
+
+
+  

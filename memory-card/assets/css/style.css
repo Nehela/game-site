@@ -1,0 +1,101 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*navbar styling*/
+.nav{
+  display:flex;
+  justify-content:flex-end;
+  background-color:black;
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  padding:10px;
+}
+.nav-list{
+  display:flex;
+  margin-right:50px;
+}
+.nav-list a{
+  text-decoration:none;
+  color:white;
+  margin-left:50px;
+  font-size:12px;
+  padding:7px;
+  font-family: 'Roboto', sans-serif;
+}
+.nav-list a:hover{
+  background-color:rgb(238, 217, 26);
+  border-radius: 25px;
+}
+ul{
+  list-style:none;
+}
+
+.reset{
+  background-color: #22b6db;
+  color: #07404e;
+  width: 150px;
+  padding:10px;
+  border-radius: 5px;
+  border: none;
+  margin-top:15px;
+  margin-left: 45%;
+}
+
+.reset:hover{
+  background-color:#07404e;
+  color: #22b6db;
+}
+
+body{
+  background-color: #f0c846;
+}
+
+.memorygame{
+  width:600px;
+  height:600px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display:flex;
+  flex-wrap:wrap;
+  perspective: 1000px;
+}
+
+.memorycard{
+  width:23%;
+  height:23%;
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .3s;
+}
+
+.memorycard:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.memorycard.flip{
+  transform: rotateY(180deg)
+}
+
+.front,
+.back{
+  width:100%;
+  height:100%;
+  padding: 10px;
+  border-radius: 10px;
+  position:absolute;
+  background-color:#f7da79;
+  backface-visibility: hidden;
+}
+
+.front{
+  transform: rotateY(180deg);
+}

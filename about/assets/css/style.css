@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:#3c3151;
+}
+/*navbar styling*/
+.nav{
+    display:flex;
+    justify-content:flex-end;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+  }
+.nav-list{
+    display:flex;
+    margin-right:50px;
+    margin-top:20px;
+  }
+.nav-list a{
+    text-decoration:none;
+    color:white;
+    margin-left:35px;
+    font-size:14px;
+    padding:5px 15px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid transparent;
+    font-weight: 400;
+.nav-list a:hover{
+    border: 1px solid #f0c846;
+    border-radius: 25px;
+  }
+ul{
+    list-style:none;
+  }
+.body{
+
+  }
+  
